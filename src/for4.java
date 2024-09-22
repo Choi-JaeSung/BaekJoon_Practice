@@ -4,11 +4,22 @@ public class for4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        int X = sc.nextInt();
         int N = sc.nextInt();
 
-        for (int i = 1; i <= N / 4; i++) {
-            System.out.printf("%s ", "long");
+        int sum = 0;
+
+        for (int i = 1; i <= N; i++) {
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+
+            sum += a * b;
         }
-        System.out.printf("%s", "int");
+
+        if (X == sum) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
     }
 }

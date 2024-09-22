@@ -13,7 +13,7 @@ public class for7 {
             int A = Integer.parseInt(st.nextToken());
             int B = Integer.parseInt(st.nextToken());
 
-            bw.write(String.format("Case #%d: %d + %d = %d", i, A, B, A + B));
+            bw.write(String.format("Case #%d: %d", i, A + B));
             if (i != T) {
                 bw.newLine();
             }
@@ -24,3 +24,21 @@ public class for7 {
         br.close();
     }
 }
+
+/*
+- Scanner 사용시
+    Scanner sc = new Scanner(System.in);
+
+    int T = sc.nextInt();
+
+    for (int i = 1; i <= T; i++) {
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+
+        if (i != T) {
+            System.out.printf("Case #%d: %d\n", i, A + B);
+        } else {
+            System.out.printf("Case #%d: %d", i, A + B);
+        }
+    }
+ */
